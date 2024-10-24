@@ -4,13 +4,12 @@ from data import *
 
 # Part 1
 # Function to count vowels within the word parameter passed into the function
-def vowel_count(word: str) -> str:
-
-    vowels = "aeiouAEIOU" # includes a"list" of possible vowels to be counted
+def vowel_count(word: str) -> int:
+    vowels = ["a","e","i","o","u"] # includes a string of possible vowels to be counted
     count = 0
     # compares each letter of a word parameter passed in to the possible vowels and adds one to count for each matching vowel
     for char in word:
-        if char in vowels:
+        if char.lower() in vowels:
             count += 1
     return count
 

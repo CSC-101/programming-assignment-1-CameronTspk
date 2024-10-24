@@ -7,6 +7,10 @@ import unittest
 # All intermediate variables will follow format of Part#_Case#, EX: two_three = Part 2 Case 3
 class TestCases(unittest.TestCase):
     # Part 1
+    def test_vowel_count(self):
+        word = "abc"
+        self.assertEqual(vowel_count(word), 1)
+
     print("Part One test results")
     One_One = vowel_count("Monsters University")
     print("Monsters University yields a vowel count of " + str(One_One))
