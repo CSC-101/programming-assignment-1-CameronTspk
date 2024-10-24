@@ -15,7 +15,7 @@ def vowel_count(word: str) -> int:
 
 
 # Part 2
-#Comprises a list of all listrs of length two
+#Comprises a list of all lists of length two
 def short_lists(whole_list: list[list[int]])->list[list[int]]:
 
     shortlist = []
